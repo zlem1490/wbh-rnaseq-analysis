@@ -37,8 +37,12 @@ Bulk RNA-seq
 
 **Samples:**
 
-* Sham group (n = 9)
-* Treatment group (n = 11)
+Samples available in GEO:
+- Sham (n = 9)
+- Treatment (n = 11)
+
+Note:
+The original publication reports that the final differential expression analysis was performed using 18 samples (9 Sham and 9 Treatment) after quality control and sample selection procedures.
 
 **Data Used in This Project:**
 
@@ -118,21 +122,6 @@ Based on the original publication:
 * Differentially expressed genes (DEGs)
 * Heat-shock protein response
 * Immune-related pathways
-
----
-
-## Repository Structure
-
-```text
-wbh-rnaseq-analysis/
-├── data/
-├── metadata/
-├── notebooks/
-├── scripts/
-├── results/
-├── figures/
-└── README.md
-```
 
 ---
 
