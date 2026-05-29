@@ -6,7 +6,7 @@ RNA-seq analysis project using public GEO data.
 Analyze transcriptomic changes after whole-body hyperthermia treatment in MDD patients.
 
 ## Dataset
-GEO dataset: GSEXXXXX
+GEO dataset: GSE301868
 
 ## Planned Analysis
 - FastQC
