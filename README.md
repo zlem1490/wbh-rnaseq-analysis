@@ -2,15 +2,23 @@
 
 ## Project Overview
 
-This project aims to analyze transcriptomic changes induced by Whole-Body Hyperthermia (WBH) treatment in patients with Major Depressive Disorder (MDD) using publicly available RNA-seq data.
+This project investigates transcriptomic changes induced by Whole-Body Hyperthermia (WBH) treatment in patients with Major Depressive Disorder (MDD) using publicly available RNA-seq data from GEO.
 
-The goal is to reproduce and understand a complete RNA-seq analysis workflow, from raw sequencing data processing to differential gene expression analysis and biological interpretation.
+The objective is to reproduce key findings from the original study and gain hands-on experience with RNA-seq differential expression analysis, visualization, and biological interpretation.
+
+---
+
+## Research Question
+
+Does whole-body hyperthermia induce measurable transcriptomic changes in the blood of patients with major depressive disorder?
 
 ---
 
 ## Dataset
 
 **Source:** GEO (Gene Expression Omnibus)
+
+**Accession:** GSE301868
 
 **Title:**
 Whole-blood transcriptomic response to whole-body hyperthermia in participants with major depressive disorder
@@ -19,85 +27,122 @@ Whole-blood transcriptomic response to whole-body hyperthermia in participants w
 Homo sapiens
 
 **Experiment Type:**
-Bulk RNA-seq (Expression profiling by high throughput sequencing)
+Bulk RNA-seq
 
 **Study Design:**
 
-* Sham WBH group (control)
-* Treatment WBH group
+* Sham WBH (control)
+* Treatment WBH
 * Whole-blood samples collected immediately after intervention
 
-**Samples Used for Pilot Analysis:**
-GSE301868
+**Samples:**
 
-* GSM9091007 (Sham, Female)
-* GSM9091013 (Sham, Male)
-* GSM9091022 (Treatment, Female)
-* GSM9091025 (Treatment, Male)
+* Sham group (n = 9)
+* Treatment group (n = 11)
+
+**Data Used in This Project:**
+
+* Gene-level expression matrix provided in GEO supplementary files
+* No raw FASTQ processing required
 
 ---
 
-## Reference
+## Background
 
-Original study:
+Major Depressive Disorder (MDD) is one of the leading causes of disability worldwide.
 
-Whole-blood transcriptomic response to whole-body hyperthermia in participants with major depressive disorder
+Whole-Body Hyperthermia (WBH) has been proposed as a potential treatment for depression, but the molecular mechanisms underlying its antidepressant effects remain poorly understood.
 
-Published: 2026
-
-DOI:
-https://doi.org/10.1016/j.bbih.2026.101225
+The original study reported increased expression of heat-shock proteins and enrichment of immune-related biological pathways following WBH treatment.
 
 ---
 
 ## Project Objectives
 
-* Understand the RNA-seq analysis pipeline
-* Process raw FASTQ files
-* Perform quality control (QC)
-* Generate gene-level count matrices
-* Explore transcriptomic differences between treatment conditions
-* Build a reproducible bioinformatics workflow
-* Document the analysis process on GitHub
+* Learn RNA-seq data analysis workflow
+* Explore transcriptomic differences between treatment groups
+* Perform differential expression analysis
+* Visualize gene expression patterns
+* Reproduce findings reported in the original publication
+* Build a reproducible bioinformatics portfolio project
 
 ---
 
-## Planned Workflow
+## Expected Findings
 
-### 1. Data Acquisition
+Based on the original publication:
 
-* Download FASTQ files from GEO
-* Organize metadata
+* Upregulation of heat-shock protein genes
 
-### 2. Quality Control
+  * HSPA1A
+  * HSPA1B
+  * HSP90AA1
+  * HSP90AB1
+  * HSPH1
 
-* FastQC
+* Enrichment of biological processes related to:
 
-### 3. Read Alignment
+  * Cellular response to heat
+  * Protein folding
+  * Cytokine signaling
+  * Interferon response
+  * Immune regulation
 
-* Alignment to human reference genome
+---
 
-### 4. Gene Quantification
+## Planned Analysis
 
-* Generate count matrix
+### 1. Data Exploration
 
-### 5. Differential Expression Analysis
+* Inspect expression matrix
+* Create sample metadata table
+
+### 2. Quality Assessment
+
+* Sample distribution
+* Principal Component Analysis (PCA)
+
+### 3. Differential Expression Analysis
 
 * DESeq2
+* Sham vs Treatment
 
-### 6. Visualization
+### 4. Visualization
 
-* PCA
-* Volcano Plot
+* PCA plot
+* Volcano plot
 * Heatmap
 
-### 7. Biological Interpretation
+### 5. Biological Interpretation
 
 * Differentially expressed genes (DEGs)
-* Heat shock protein genes
-* Immune and inflammatory pathways
+* Heat-shock protein response
+* Immune-related pathways
 
 ---
-## Notes
 
-This repository is intended as a learning and portfolio project focused on gaining hands-on experience with bulk RNA-seq data analysis and reproducible bioinformatics workflows.
+## Repository Structure
+
+```text
+wbh-rnaseq-analysis/
+├── data/
+├── metadata/
+├── notebooks/
+├── scripts/
+├── results/
+├── figures/
+└── README.md
+```
+
+---
+
+## Reference
+
+Original publication:
+
+Whole-blood transcriptomic response to whole-body hyperthermia in participants with major depressive disorder
+
+DOI:
+https://doi.org/10.1016/j.bbih.2026.101225
+
+
