@@ -96,32 +96,33 @@ Based on the original publication:
 
 ## Planned Analysis
 
-### 1. Data Exploration
+## Planned Analysis
 
-* Inspect expression matrix
-* Create sample metadata table
+### 1. Data Preparation
+- Inspect GEO supplementary expression matrix
+- Create sample metadata table
+- Match sample IDs with treatment groups
 
-### 2. Quality Assessment
+### 2. Differential Expression Analysis
+- Compare Treatment WBH vs Sham WBH
+- Identify differentially expressed genes (DEGs)
+- Focus on FDR-adjusted q-value < 0.01
 
-* Sample distribution
-* Principal Component Analysis (PCA)
+### 3. Visualization
+- Volcano plot
+- Heatmap of selected DEGs
+- Expression plots for key heat-shock protein genes
 
-### 3. Differential Expression Analysis
-
-* DESeq2
-* Sham vs Treatment
-
-### 4. Visualization
-
-* PCA plot
-* Volcano plot
-* Heatmap
+### 4. Gene Set Enrichment Analysis
+- Use log-fold changes and p-values from DEG analysis
+- Identify enriched biological processes
+- Compare findings with the original publication
 
 ### 5. Biological Interpretation
-
-* Differentially expressed genes (DEGs)
-* Heat-shock protein response
-* Immune-related pathways
+- Heat-shock protein response
+- Immune response
+- Cytokine-related signaling
+- Interleukin-6-related pathways
 
 ---
 
