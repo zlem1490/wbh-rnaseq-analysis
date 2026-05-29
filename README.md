@@ -46,7 +46,7 @@ Whole-blood transcriptomic response to whole-body hyperthermia in participants w
 Published: 2026
 
 DOI:
-https://doi.org/10.1080/17435889.2025.2572991
+https://doi.org/10.1016/j.bbih.2026.101225
 
 ---
 
